@@ -60,8 +60,10 @@ for _ in xrange(num_guess):
         	new_possible_car_positions.remove(car_actual_position)
         else:
         	new_possible_car_positions.remove(fake_car_position)
+
         final_guess_car_position = new_possible_car_positions[0]
-    else:
+    
+    else:   #if switch == True
         new_possible_car_positions.remove(initial_guess_car_position)
         final_guess_car_position = new_possible_car_positions[0]
     
